@@ -5,7 +5,6 @@ const app = express()
 const PORT = process.env.PORT ?? 4000
 
 app.get("/", (req, res) => {
-    console.log(req)
     res.status(200).json({
         message: "Started",
         status: 200
